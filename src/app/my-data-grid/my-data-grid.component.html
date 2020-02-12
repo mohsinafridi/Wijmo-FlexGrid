@@ -1,0 +1,9 @@
+<h3>Wijmo FlexGrid</h3>
+<!-- define the grid -->
+<wj-flex-grid [allowResizing]="'None'" [alternatingRowStep]=0 [isReadOnly]="true" [selectionMode]="'ListBox'" [headersVisibility]="'Column'" [itemsSource]="data">
+
+  <!-- define the columns -->
+  <wj-flex-grid-column [binding]="'properties.type'" [header]="'Type'" [width]="'*'"></wj-flex-grid-column>
+  <wj-flex-grid-column [binding]="'properties.name'" [header]="'Name'" [width]="'*'"></wj-flex-grid-column>
+  <wj-flex-grid-column [binding]="'properties.address'" [header]="'Address'" [width]="'*'"></wj-flex-grid-column>
+</wj-flex-grid>
